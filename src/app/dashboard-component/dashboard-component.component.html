@@ -4,6 +4,23 @@ Id:{{user.id}}<br>
 Name:{{user.Name}}<br>
 Email:{{user.Email}}<br>
 
+<br><br>
+  <form (ngSubmit)="onSubmit()" #profileForm="ngForm">
+       <div>
+          <label for = "id">ID</label>
+          <input type = "text" id = "id" [(ngModel)] = "user.id" name = "id">
+       </div>
+       <div>
+          <label for = "name">Name</label>
+          <input type = "text" id = "name" [(ngModel)] = "user.Name" name = "name">
+       </div>
+        <div>
+          <label for = "age">Email</label>
+          <input type = "text" id = "age" [(ngModel)] = "user.Email" name = "age">
+       </div>
+       
+    </form>
+
 <!-- <p>
  <a [routerLink] = "['/']">DASHBOARD</a>
 
