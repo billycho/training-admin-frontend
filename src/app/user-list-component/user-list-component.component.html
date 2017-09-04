@@ -1,3 +1,4 @@
+
 <table border="1px">
 <div *ngFor="let u of users"> 
     <tr> 
@@ -5,7 +6,7 @@
        <td>Name: {{u.Name}}</td> 
        <td>Email: {{u.Email}}</td> 
        <td><button (click)="myFunc(u.id,u.Name,u.Email)">Detail</button></td>
-       <td><a [routerLink]="['/users', u.id]">Detail Link</a> </td>
+       <!-- <td><a [routerLink]="['/users', u.id]">Detail Link</a> </td> -->
     </tr> 
  </div>
 </table>

@@ -20,15 +20,24 @@ export class UserListComponentComponent implements OnInit {
   valid:boolean = false;
   
   users:User[];
+  user:User;
+  user1:User;
+  user2:User;
 
   constructor(private userService: UserService) { 
-  	// this.users.push(this.user);
-  	// this.users.push(this.user1);
-  	// this.users.push(this.user2);
-  	// for(let a of this.users)
-  	// {
-  	// 	console.log(a['Id']);
-  	// }
+    this.user = new User(1,"Jack Soraya","jacksoraya@gmail.com");
+    this.user1 = new User(2,"Jack Soraya 2","jacksoraya2@gmail.com");
+    this.user2 = new User(3,"Jack Soraya 3","jacksoraya3@gmail.com");
+  	this.users = [
+  this.user,
+  this.user1,
+  this.user2
+];
+
+  	for(let a of this.users)
+  	{
+  		console.log(a['id']);
+  	}
 
    // this.asdax = this.userService.getUsers();
 
@@ -38,7 +47,7 @@ export class UserListComponentComponent implements OnInit {
    //  }
 
    //this.users = this.userService.getUsers();
-   console.log(this.userService.getHeroes());
+   //console.log(this.userService.getHeroes());
   }
 
 
@@ -51,7 +60,7 @@ export class UserListComponentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getUsers();
+    //this.getUsers();
     //console.log(this.users.length);
 
   }
