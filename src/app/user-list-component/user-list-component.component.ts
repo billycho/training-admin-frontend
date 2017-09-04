@@ -25,7 +25,7 @@ export class UserListComponentComponent implements OnInit {
   user2:User;
 
   constructor(private userService: UserService) { 
-    this.users = userService.getUsers();
+   this.users = userService.getUsers();
 //     this.user = new User(1,"Jack Soraya","jacksoraya@gmail.com");
 //     this.user1 = new User(2,"Jack Soraya 2","jacksoraya2@gmail.com");
 //     this.user2 = new User(3,"Jack Soraya 3","jacksoraya3@gmail.com");

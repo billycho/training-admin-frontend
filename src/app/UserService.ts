@@ -12,6 +12,7 @@ import 'rxjs/add/operator/toPromise';
 	  user2 = new User(3,'c','c@hotmail.com');
 	  users = new Array();
     users1 = new Array();
+    asda:number;
  	 constructor(private http: Http) { 
   	this.users.push(this.user);
   	this.users.push(this.user1);
@@ -22,6 +23,13 @@ import 'rxjs/add/operator/toPromise';
  	{
  		return this.users;
  	}
+
+  getUserById(abc:number)
+  {
+
+   
+    return this.users.filter(item => item.id == (abc))[0];;
+  }
 
  	getHeroes(): Promise<User[]> {
 
