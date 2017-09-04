@@ -13,6 +13,8 @@ export class DashboardComponentComponent implements OnInit {
 users: User[];
 asda: string;
 angka: number;
+user = new User(1,"Jack Soraya","jacksoraya@gmail.com");
+  
   constructor(private userService: UserService,
   	private router: Router) { }
 
