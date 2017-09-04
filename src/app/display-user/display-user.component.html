@@ -1,0 +1,20 @@
+
+Id:{{UserId}}<br>
+Name:{{UserName}}<br>
+Email:{{UserEmail}}<br>
+<br><br>
+  <form (ngSubmit)="onSubmit()" #profileForm="ngForm">
+       <div>
+          <label for = "id">ID</label>
+          <input type = "text" id = "id" [(ngModel)] = "UserId" name = "id">
+       </div>
+       <div>
+          <label for = "name">Name</label>
+          <input type = "text" id = "name" [(ngModel)] = "UserName" name = "name">
+       </div>
+        <div>
+          <label for = "age">Email</label>
+          <input type = "text" id = "age" [(ngModel)] = "UserEmail" name = "age">
+       </div>
+       
+    </form>

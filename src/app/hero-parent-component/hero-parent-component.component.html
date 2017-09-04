@@ -1,0 +1,23 @@
+<p>
+  hero-parent-component works!
+</p>
+{{counts}}
+
+  <form (ngSubmit)="onSubmit()" #profileForm="ngForm">
+       <div>
+          <label for = "id">ID</label>
+          <input type = "text" id = "id" [(ngModel)] = "counts" name = "id">
+       </div>
+       <div>
+          <label for = "name">Name</label>
+          <input type = "text" id = "name" [(ngModel)] = "counts" name = "name">
+       </div>
+        <div>
+          <label for = "age">Email</label>
+          <input type = "text" id = "age" [(ngModel)] = "counts" name = "age">
+       </div>
+       
+    </form>
+
+
+<app-hero-child-component [count]="counts"></app-hero-child-component>
