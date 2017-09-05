@@ -68,7 +68,7 @@ export class UserListComponentComponent implements OnInit {
 
    getUsers(): void {
     this.userService
-        .getHeroes()
+        .getUsersData()
         .then(users => this.users = users);
   }
 

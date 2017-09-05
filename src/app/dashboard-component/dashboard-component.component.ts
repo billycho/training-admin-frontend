@@ -28,7 +28,7 @@ user = new User(1,"Jack Soraya","jacksoraya@gmail.com");
 
    getUsers(): void {
     this.userService
-        .getHeroes()
+        .getUsersData()
         .then(users => this.users = users);
   }
 

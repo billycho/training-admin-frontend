@@ -31,7 +31,7 @@ import 'rxjs/add/operator/toPromise';
     return this.users.filter(item => item.id == (abc))[0];;
   }
 
- 	getHeroes(): Promise<User[]> {
+ 	getUsersData(): Promise<User[]> {
 
     
   return this.http.get(this.heroesUrl)
@@ -40,7 +40,7 @@ import 'rxjs/add/operator/toPromise';
              .catch(this.handleError);
 }
 
-   getHero(Id: number): Promise<User> {
+   getUserData(Id: number): Promise<User> {
     const url = `${this.heroesUrl}/${Id}`;
 
     console.log(this.http.get(url)
